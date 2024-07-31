@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("Image/main_page.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 60vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  z-index: 10;
+  position: relative;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+.hero > :first-child {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.btn {
+  padding: 6px 25px;
+  font-weight: bold;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #ffffff9c;
+  cursor: pointer;
+  /* padding: 4px 10px 4px 10px; */
+}
+.btn-red-sm {
+  cursor: pointer;
+  padding: 6px 15px;
+  margin-left: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.main input {
+  color: white;
+  border-radius: 4px;
+  padding: 13px 55px;
+  margin-left: 50px;
+  font-size: 15px;
+  background-color: rgba(23, 23, 23, 0.5);
+  border: none;
+  border: 1.5px solid rgb(165, 154, 154);
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding: 13px 35px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.separator {
+  height: 7px;
+  background-color: rgba(35, 35, 35, 1);
+}
+
+/* Sections */
+
+.first {
+  display: flex;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  left: 0;
+  width: 555px;
+  height: auto;
+  z-index: 2;
+  overflow: hidden;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+/* FAQ */
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 15px auto;
+  cursor: pointer;
+}
+/* Fotter  */
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+footer .questions {
+  padding: 34px 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #b3b3b3;
+}
+.footer a {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-top: 15px;
+}
+footer #dec {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .main input {
+    margin-left: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 80%;
+  }
+  .btn-red {
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
